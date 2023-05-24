@@ -1,3 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="e05ab3ef47662150d69721baf36d4361" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection"/>
+    <element db_object_id="e05ab3ef47662150d69721baf36d4361" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element choice="1" display="true" label="Request type" max_length="40" name="request_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Facilities" value="Facilities"/>
+                <element inactive_on_update="false" label="Hr" value="Hr"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element choice="1" label="what needed" max_length="40" name="what_needed" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="test" value="test"/>
+            </choice>
+        </element>
+    </element>
 </database>
